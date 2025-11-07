@@ -20,5 +20,14 @@ dev = [
     "pytest",
     "mypy",
     "black",
-    "ruff",
+    "isort",
 ]
+notebook = [
+    "ipykernel",
+    "black[jupyter]",
+    "nbdime",
+]
+
+[tool.black]
+line-length = 80
+target-version = ['py312']

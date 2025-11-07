@@ -30,6 +30,11 @@ TODO: Explain how unit- or integreation tests can be executed.
 ### Run
 TODO: Explain how to run the project (client, server etc.).
 
+### Notebook
+TODO: Explain how to run notebooks.
+
+https://nbdime.readthedocs.io/en/latest/
+
 ## License
 
 [LICENSE](./LICENSE)
