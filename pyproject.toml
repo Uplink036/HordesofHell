@@ -1,0 +1,17 @@
+[project]
+name = "hordes-of-hell"
+version = "2025.11.07"
+dependencies = [
+    "seaborn",
+    "matplotlib",
+    "numpy",
+]
+requires-python = ">=3.12"
+
+[dependency-groups]
+test = [
+    "pytest",
+    "mypy",
+    "black",
+    "ruff",
+]
