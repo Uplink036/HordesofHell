@@ -1,4 +1,4 @@
-Difficulty,RunID,RoundID,Alternative 1,Alternativ 2,Alternativ 3,Chaos Wave,Choice,Cinders After Round,Total Aether
+Difficulty,RunID,RoundID,Alternativ 1,Alternativ 2,Alternativ 3,Chaos Wave,Choice,Cinders After Round,Total Aether
 T4,1,1,The Draining Spires,The Precious Spires,The Fiendish Legions,FALSE,The Precious Spires,74,1224
 T4,1,2,The Summoned Hellborne,The Fiendish Legions,The Anchored Masses,FALSE,The Summoned Hellborne,142,1224
 T4,1,3,The Hellish Masses,The Bursting Masses,The Exalted Hordes,FALSE,The Exalted Hordes,220,1224
@@ -16,11 +16,11 @@ T4,2,4,The Exalted Fiends,The Hellish Masses,The Bursting Masses,FALSE,The Exalt
 T4,2,5,The Stalking Devil,The Fiendish Legions,The Burning Rain,FALSE,The Fiendish Legions,390,2881
 T4,2,6,The Precious Spires,The Colossal Fiends,The Hungry Spires,FALSE,The Precious Spires,503,2881
 T4,2,7,The Ambushing Hellborne,The Rising Spires,The Exalted Fiends,TRUE,The Chaotic Offering,2156,2881
-T4,2,8,The Treasured Spire,The Burning Rain,The Bursting Masses,FALSE,The Treasured Spires,2396,2881
-T4,2,9,The Burning Raiin,The Rising Spires,The Hungry Spires,FALSE,The Hungry Spires,2674,2881
+T4,2,8,The Treasured Spires,The Burning Rain,The Bursting Masses,FALSE,The Treasured Spires,2396,2881
+T4,2,9,The Burning Rain,The Rising Spires,The Hungry Spires,FALSE,The Hungry Spires,2674,2881
 T4,2,10,The Hellish Masses,The Summoned Hellborne,The Stalking Devil,FALSE,The Stalking Devil,2881,2881
 T4,3,1,The Burning Rain,The Puffing Masses,The Bursting Masses,FALSE,The Puffing Masses,39,1482
-T4,3,2,The Hungry Spires,The Ambusihng Hellborne,The Bursting Masses,TRUE,The Chaotic Offering,339,1482
+T4,3,2,The Hungry Spires,The Ambushing Hellborne,The Bursting Masses,TRUE,The Chaotic Offering,339,1482
 T4,3,3,The Rising Spires,The Draining Spires,The Teeming Masses,FALSE,The Teeming Masses,387,1482
 T4,3,4,The Massing Masses,The Burning Rain,The Rising Spires,FALSE,The Massing Masses,552,1482
 T4,3,5,The Colossal Fiends,The Draining Spires,The Hungry Spires,FALSE,The Colossal Fiends,657,1482
@@ -32,7 +32,7 @@ T4,3,10,The Summoned Hellborne,The Anchored Masses,The Burning Rain,FALSE,The Su
 T4,4,1,The Burning Rain,The Precious Spires,The Stalking Devil,FALSE,The Burning Rain,54,1154
 T4,4,2,The Anchored Masses,The Ambushing Hellborne,The Puffing Masses,FALSE,The Puffing Masses,113,1154
 T4,4,3,The Meteoric Hellborne,The Summoned Hellborne,The Stalking Devil,FALSE,The Meteoric Hellborne,191,1154
-T4,4,4,The Anchored Masses,The Precious Spires,THe Exalted Hordes,TRUE,The Chaotic Offering,476,1154
+T4,4,4,The Anchored Masses,The Precious Spires,The Exalted Hordes,TRUE,The Chaotic Offering,476,1154
 T4,4,5,The Draining Spires,The Teeming Masses,The Anchored Masses,FALSE,The Anchored Masses,567,1154
 T4,4,6,The Exalted Hellborne,The Exalted Fiends,The Hellish Masses,FALSE,The Hellish Masses,678,1154
 T4,4,7,The Draining Spires,The Massing Masses,The Surging Hellborne,FALSE,The Massing Masses,818,1154
@@ -54,25 +54,25 @@ T4,6,2,The Rising Spires,The Fiendish Legions,The Anchored Masses,FALSE,The Fien
 T4,6,3,The Precious Spires,The Rising Spires,The Teeming Masses,FALSE,The Precious Spires,222,1739
 T4,6,4,The Colossal Fiends,The Rising Spires,The Burning Rain,TRUE,The Colossal Fiends,369,1739
 T4,6,5,The Bursting Masses,The Enduring Lords,The Ambushing Hellborne,FALSE,The Bursting Masses,465,1739
-T4,6,6,The Pufing Masses,The Massing Masses,The Draining Spires,FALSE,The Pufing Masses,681,1739
+T4,6,6,The Puffing Masses,The Massing Masses,The Draining Spires,FALSE,The Puffing Masses,681,1739
 T4,6,7,The Anchored Masses,The Teeming Masses,The Hellish Masses,FALSE,The Teeming Masses,879,1739
 T4,6,8,The Aether Goblins,The Burning Rain,The Ambushing Hellborne,FALSE,The Aether Goblins,1190,1739
-T4,6,9,The Treasured Spire,The Hellish Masses,The Burning Rain,TRUE,The Chaotic Offering,1395,1739
-T4,6,10,The Ruthles Lords,The Massing Masses,The Draining Spires,FALSE,The Massing Masses,1739,1739
-T4,7,1,The Exalted FIends,The Anchored Masses,The Teeming Masses,FALSE,The Exalted Fiends,43,2245
+T4,6,9,The Treasured Spires,The Hellish Masses,The Burning Rain,TRUE,The Chaotic Offering,1395,1739
+T4,6,10,The Ruthless Lords,The Massing Masses,The Draining Spires,FALSE,The Massing Masses,1739,1739
+T4,7,1,The Exalted Fiends,The Anchored Masses,The Teeming Masses,FALSE,The Exalted Fiends,43,2245
 T4,7,2,The Hellish Masses,The Ambushing Hellborne,The Bursting Masses,TRUE,The Chaotic Offering,350,2245
 T4,7,3,The Rising Spires,The Fiendish Legions,The Ambushing Hellborne,FALSE,The Fiendish Legions,429,2245
 T4,7,4,The Teeming Masses,The Bursting Masses,The Hellish Masses,FALSE,The Teeming Masses,622,2245
 T4,7,5,The Rising Spires,The Exalted Hordes,The Hellish Masses,FALSE,The Exalted Hordes,685,2245
 T4,7,6,The Exalted Fiends,The Colossal Fiends,The Bursting Masses,FALSE,The Colossal Fiends,853,2245
 T4,7,7,The Draining Spires,The Exalted Fiends,The Bursting Masses,FALSE,The Exalted Fiends,1127,2245
-T4,7,8,The Pufing Masses,The Exalted Fiends,The Ambushing Hellborne,FALSE,The Exalted Fiends,1371,2245
+T4,7,8,The Puffing Masses,The Exalted Fiends,The Ambushing Hellborne,FALSE,The Exalted Fiends,1371,2245
 T4,7,9,The Stalking Devil,The Ruthless Lords,The Draining Spires,TRUE,The Ruthless Lords,1816,2245
 T4,7,10,The Puffing Masses,The Draining Spires,The Rising Spires,FALSE,The Puffing Masses,2245,2245
 T4,8,1,The Teeming Masses,The Draining Spires,The Fiendish Legions,FALSE,The Draining Spires,46,1670
 T4,8,2,The Puffing Masses,The Bursting Masses,The Precious Spires,FALSE,The Precious Spires,90,1670
 T4,8,3,The Rising Spires,The Teeming Masses,The Burning Rain,FALSE,The Rising Spires,192,1670
-T4,8,4,The Exalted FIends,The Teeming Masses,The Rising Spires,TRUE,the Chaotic Offering,487,1670
+T4,8,4,The Exalted Fiends,The Teeming Masses,The Rising Spires,TRUE,the Chaotic Offering,487,1670
 T4,8,5,The Bursting Masses,The Exalted Hordes,The Fiendish Legions,FALSE,The Exalted Hordes,607,1670
 T4,8,6,The Bursting Masses,The Stalking Devil,The Fiendish Legions,FALSE,The Stalking Devil,785,1670
 T4,8,7,The Burning Rain,The Fiendish Legions,The Treasured Spires,TRUE,The Treasured Spires,932,1670
@@ -83,7 +83,7 @@ T4,9,1,The Stalking Devil,The Rising Spires,The Anchored Masses,FALSE,The Stalki
 T4,9,2,The Bursting Masses,The Hellish Masses,The Teeming Masses,FALSE,The Hellish Masses,184,1172
 T4,9,3,The Rising Spires,The Exalted Hellborne,The Teeming Masses,FALSE,The Exalted Hellborne,242,1172
 T4,9,4,The Aether Goblins,The Anchored Masses,The Exalted Hellborne,FALSE,The Aether Goblins,310,1172
-T4,9,5,The Exalted FIends,The Summoned Hellborne,The Surging Hellborne,TRUE,The Summoned Hellborne,403,1172
+T4,9,5,The Exalted Fiends,The Summoned Hellborne,The Surging Hellborne,TRUE,The Summoned Hellborne,403,1172
 T4,9,6,The Bursting Masses,The Anchored Masses,The Rising Spires,FALSE,The Bursting Masses,499,1172
 T4,9,7,The Precious Spires,The Bursting Masses,The Exalted Fiends,FALSE,The Precious Spires,588,1172
 T4,9,8,The Anchored Masses,The Exalted Hellborne,The Treasured Spires,FALSE,The Exalted Hellborne,753,1172
