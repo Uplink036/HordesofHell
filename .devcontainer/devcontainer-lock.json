@@ -1,0 +1,19 @@
+{
+  "features": {
+    "ghcr.io/devcontainers-extra/features/black:2": {
+      "version": "2.0.18",
+      "resolved": "ghcr.io/devcontainers-extra/features/black@sha256:44ea965903a9ee19fe91e6ea7ac556d89f4013f9b251637423ffe9ef9de0b1ae",
+      "integrity": "sha256:44ea965903a9ee19fe91e6ea7ac556d89f4013f9b251637423ffe9ef9de0b1ae"
+    },
+    "ghcr.io/devcontainers-extra/features/isort:2": {
+      "version": "2.0.18",
+      "resolved": "ghcr.io/devcontainers-extra/features/isort@sha256:61054644446a26f4d6badffad9fbda36f5d801bc390543728fe591059209c728",
+      "integrity": "sha256:61054644446a26f4d6badffad9fbda36f5d801bc390543728fe591059209c728"
+    },
+    "ghcr.io/devcontainers-extra/features/mypy:2": {
+      "version": "2.0.18",
+      "resolved": "ghcr.io/devcontainers-extra/features/mypy@sha256:534691ad5dc1dbdf2d2fe9cd541117758b8e381d56f1f3ad73bea12b93ba70c2",
+      "integrity": "sha256:534691ad5dc1dbdf2d2fe9cd541117758b8e381d56f1f3ad73bea12b93ba70c2"
+    }
+  }
+}
