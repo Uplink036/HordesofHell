@@ -1,6 +1,11 @@
 [project]
-name = "hordes-of-hell"
-version = "2025.11.07"
+name = "hordesofhell"
+version = "2026.10.05"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+license = "GPL-3.0-only"
+license-files = ["LICENSE"]
 dependencies = [
     "seaborn",
     "matplotlib",
@@ -10,10 +15,9 @@ authors = [
   { name="Uplink036" },
   { name="s02blom" },
 ]
-readme = "README.md"
-requires-python = ">=3.12"
-license = "GPL-3.0-only"
-license-files = ["LICENSE"]
+
+[project.scripts]
+hordesofhell = "hordesofhell:main"
 
 [project.optional-dependencies]
 dev = [
@@ -31,3 +35,7 @@ notebook = [
 [tool.black]
 line-length = 80
 target-version = ['py312']
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
