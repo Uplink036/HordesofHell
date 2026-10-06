@@ -1,4 +1,13 @@
-.PHONY: tests lint format help
+.PHONY: data tests lint format help
+
+pipeline: tests data validate ## Run the full pipeline
+	@echo "Done..."
+
+data: ## Convert data files
+	uv run python -m data.convert
+
+validate: ## Run data validation rules
+	uv run python -m data.validation
 
 tests: ## Run tests
 	uv run --extra dev pytest
