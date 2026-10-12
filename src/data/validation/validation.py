@@ -1,8 +1,10 @@
-import pandas as pd
 import re
 from dataclasses import dataclass
 
+import pandas as pd
+
 ANYTHING_IN_ROW = r".*"
+
 
 @dataclass
 class CSVValidator:
@@ -13,7 +15,7 @@ class CSVValidator:
 
     def assert_csv_header(self) -> bool:
         with open(self.csv_path, "r") as f:
-            first_line = f.readline().strip() 
+            first_line = f.readline().strip()
             header = tuple(first_line.split(self.split_by))
 
         if header != self.expected_columns:
@@ -22,7 +24,6 @@ class CSVValidator:
                 f"Expected: {self.expected_columns}"
             )
         return True
-
 
     def assert_csv_rows(self) -> bool:
         with open(self.csv_path, "r") as f:
@@ -35,6 +36,7 @@ class CSVValidator:
                             f"Expected to match regex: {regex}"
                         )
         return True
+
 
 @dataclass
 class Rule:

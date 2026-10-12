@@ -5,6 +5,7 @@ from typing import Any
 import torch
 from torch.utils.data import DataLoader, Dataset, Subset
 
+
 class SimpleDataset(Dataset[tuple[torch.Tensor, torch.Tensor]]):
     """
     Features:
@@ -25,15 +26,27 @@ class SimpleDataset(Dataset[tuple[torch.Tensor, torch.Tensor]]):
         with csv_file.open(newline="", encoding="utf-8") as handle:
             rows = list(csv.DictReader(handle))
 
-        difficulties = sorted({self._clean_value(row["Difficulty"]) for row in rows})
+        difficulties = sorted(
+            {self._clean_value(row["Difficulty"]) for row in rows}
+        )
         choices = sorted({self._clean_choice(row["Choice"]) for row in rows})
 
-        self.difficulty_to_index = {name: idx for idx, name in enumerate(difficulties)}
+        self.difficulty_to_index = {
+            name: idx for idx, name in enumerate(difficulties)
+        }
         self.choice_to_index = {name: idx for idx, name in enumerate(choices)}
-        self.index_to_choice = {idx: name for name, idx in self.choice_to_index.items()}
+        self.index_to_choice = {
+            idx: name for name, idx in self.choice_to_index.items()
+        }
 
-        run_ids = torch.tensor([int(self._clean_value(row["RunID"])) for row in rows], dtype=torch.int32)
-        round_ids = torch.tensor([int(self._clean_value(row["RoundID"])) for row in rows], dtype=torch.int32)
+        run_ids = torch.tensor(
+            [int(self._clean_value(row["RunID"])) for row in rows],
+            dtype=torch.int32,
+        )
+        round_ids = torch.tensor(
+            [int(self._clean_value(row["RoundID"])) for row in rows],
+            dtype=torch.int32,
+        )
         total_aether_raw = torch.tensor(
             [int(self._clean_value(row["Total Aether"])) for row in rows],
             dtype=torch.int32,
@@ -46,9 +59,13 @@ class SimpleDataset(Dataset[tuple[torch.Tensor, torch.Tensor]]):
             difficulty = self._clean_value(row["Difficulty"])
             choice = self._clean_choice(row["Choice"])
 
-            difficulty_vec = torch.zeros(len(self.difficulty_to_index), dtype=torch.float32)
+            difficulty_vec = torch.zeros(
+                len(self.difficulty_to_index), dtype=torch.float32
+            )
             difficulty_vec[self.difficulty_to_index[difficulty]] = 1.0
-            choice_vec = torch.zeros(len(self.choice_to_index), dtype=torch.float32)
+            choice_vec = torch.zeros(
+                len(self.choice_to_index), dtype=torch.float32
+            )
             choice_vec[self.choice_to_index[choice]] = 1.0
 
             numeric_vec = torch.tensor(
@@ -56,7 +73,9 @@ class SimpleDataset(Dataset[tuple[torch.Tensor, torch.Tensor]]):
                 dtype=torch.float32,
             )
 
-            feature_rows.append(torch.cat((difficulty_vec, numeric_vec, choice_vec), dim=0))
+            feature_rows.append(
+                torch.cat((difficulty_vec, numeric_vec, choice_vec), dim=0)
+            )
             targets.append(total_aether_raw[idx].unsqueeze(0))
 
         self.features = torch.stack(feature_rows)

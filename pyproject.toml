@@ -28,8 +28,7 @@ dev = [
     "isort",
 ]
 notebook = [
-    "ipykernel",
-    "black[jupyter]",
+    "black[jupyter]>=26.10.0",
     "nbdime",
 ]
 
