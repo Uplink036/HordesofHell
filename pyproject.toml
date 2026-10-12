@@ -7,7 +7,9 @@ requires-python = ">=3.14"
 license = "GPL-3.0-only"
 license-files = ["LICENSE"]
 dependencies = [
+    "ipykernel>=7.4.0",
     "pandas>=3.0.6",
+    "seaborn>=0.13.2",
     "torch>=2.14.1",
 ]
 authors = [

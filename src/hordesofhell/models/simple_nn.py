@@ -17,7 +17,7 @@ class SimpleNN(nn.Module):
             nn.Linear(input_features, 16),
             nn.ReLU(),
             nn.Dropout(0.2),
-            nn.Linear(16, 1, dtype=torch.int32)
+            nn.Linear(16, 1)
         )
 
     def forward(self, x):
