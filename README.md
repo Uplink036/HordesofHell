@@ -1,44 +1,69 @@
 # HordesOfHell
+
 ## Introduction
 
-This project is about predecting the amount of "Burning Aether" you get when running a infernal hord in diablo 4. As of season 10 it consitst of 4-10 waves of enemies, with 3 choiches at the end between each wave. These choiches buff the enemies, but also increase the amount of Aether you get.
+HordesOfHell explores machine learning for predicting "Aether" from Infernal Hordes run data in "Diablo 4".
 
-```
+For example, see the [Simple Model](./docs/simple.md) documentation.
+
+## Project layout
+
+```text
 HordesOfHell/
-├── source/
-│   ├── main.py
-├── docs/
-│   ├── index.md
+├── src/
+│   ├── hordesofhell/
+│   │   └── ...
+│   └── data/
+│       └── ...
+├── notebooks/
+│   └── ...
 ├── tests/
-│   ├── test_main.py
-├── .devcontainer/
-│   └── devcontainer.json
-├── LICENSE
-├── .gitignore
+├── simple_output.csv
+├── pyproject.toml
 └── README.md
 ```
-## How to Use
-#### Dev Container
-Using a popular IDE like VSCode, you can use a [devcontainer exstension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers). In VSCode, you press `CTRL+SHIT+P` and write and select `Dev Containers: Rebuild and reopen in container`, after which you should have a fully set up dev environment.
 
-#### Local
-With python 3.12 or higher installed, run `pip install -e .[dev]` to get all the required packages. 
+## How to use 
 
-### Test
-TODO: Explain how unit- or integreation tests can be executed.
+### Setup
 
-### Run
-TODO: Explain how to run the project (client, server etc.).
+#### Dev Container (VS Code)
 
-### Notebook
-TODO: Explain how to run notebooks.
+Using a popular IDE like VSCode, you can use a [devcontainer exstension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers). In VSCode, you press `CTRL+SHIFT+P` and write and select `Dev Containers: Rebuild and reopen in container`, after which you should have a fully set up dev environment.
 
-https://nbdime.readthedocs.io/en/latest/
+#### Local environment
+
+This project uses Python 3.14+.
+
+Install dependencies with `uv`:
+
+```bash
+uv sync --extra dev
+```
+
+If you want notebook tooling as well:
+
+```bash
+uv sync --extra dev --extra notebook
+```
+
+### Usefull Terminal Commands
+
+```bash
+data                           Convert data files
+format                         Format the code
+help                           Display this help
+lint                           Run linters
+pipeline                       Run the full pipeline
+tests                          Run tests
+validate                       Run data validation rules
+```
 
 ## License
 
 [LICENSE](./LICENSE)
 
-Authors
+## Authors
+
 - [Uplink036](https://github.com/Uplink036)
 - [s02blom](https://github.com/s02blom)
