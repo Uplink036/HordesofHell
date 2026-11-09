@@ -112,6 +112,10 @@ def create_simple_dataloaders(
         msg = f"train_split must be in (0, 1), got {train_split}"
         raise ValueError(msg)
 
+    if not csv_path.exists(follow_symlinks=True):
+        msg = f"Missing {csv_path}. Have you run 'make pipeline'?"
+        raise FileNotFoundError(msg)
+
     dataset = SimpleDataset(csv_path)
     dataset_size = len(dataset)
     train_size = int(dataset_size * train_split)
